@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+      font-family:'Do Hyeon', sans-serif;
+      box-sizing:border-box;
+}
+.banner{
+    width:100% ;
+    height: 150vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(university.jpg) ;
+    background-size:cover;
+    background-position:center;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 25%; 
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+  
+    margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a::after{
+    content: '';
+    height:3px ;
+    width: 0%;
+    background:#dc3545;
+    position: absolute;
+    left:50%;
+    bottom: -5px;
+      transform:translateX(-50%);
+    transition: width 0.5s;
+    
+}
+.navbar ul li a:hover::after{
+    width: 50%;
+
+}
+.content{
+    color:white;
+    width:100%;
+    text-align:center;
+
+    transform:translateY(20%);
+  
+}
+.content h1{
+    font-size:90px;
+    margin-bottom:5px;
+    color:transparent;
+-webkit-text-stroke:1px #fff;
+background:url(images/back.png);
+-webkit-background-clip:text;
+background-position:0 0;
+animation:backa 20s linear infinite;
+
+}
+@keyframes backa{
+    100%{
+background-position:2000px 0;
+    }
+}
+.content p{
+    line-height:25px;
+    font-weight:500;
+
+}
+.container{
+    margin-top:60px;
+    margin-left:626px;
+  
+}
+.banner1{
+ width:100% ;
+    height: 50vh;
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(images/about.jpg);
+    background-position:center;
+        background-size:cover;
+
+}
+h2{
+    font-size:50px;
+    margin-top:0px;
+}
+.banner2{
+    width:100% ;
+       height: 50vh;
+       background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(images/courses1.jpg);
+       background-position:center;
+           background-size:cover;
+   
+   }
+   
+  .content1{
+    width:100% ;
+    height: 130vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(university.jpg) ;
+    background-size:cover;
+    background-position:center;
+  }
+  .contentabout{
+    color:white;
+    width:100%;
+    text-align:center;
+
+    transform:translateY(30%);
+  
+}
+.form-container{
+    border:1px solid #fff;
+    padding: 30px 40px;
+    margin-top: 30px;
+    color: white;
+    box-shadow: 1px 4px 16px 2px rgba(235,230,235,0.39);
+    border-radius: 20px 20px 20px 20px;
+}
+.buttonbox{
+position: relative;
+width:220px;
+margin:35px auto;
+box-shadow: 0 0 20px 9px  #dc3545;
+border-radius: 30px;
+}
+.toggle-btn{
+    padding:10px 30px;
+    outline: none;
+    cursor:pointer;
+    background: transparent;
+    border: 0;
+    position: relative;
+    border-radius: 30px;
+    color: white;
+}
+#btn{
+background: #dc3545;
+ left: 0;
+ top: 0;
+ position: absolute;
+ transition: .05s;
+ border-radius: 30px;
+ height: 100%;
+ width: 110px; 
+
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+.loginpage{
+    width: 50%; 
+}
+.banners{
+    width:100% ;
+    height: 110vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(university.jpg) ;
+    background-size:cover;
+    background-position:center;
+}
